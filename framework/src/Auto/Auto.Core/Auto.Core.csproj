@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspectCore.Extensions.DependencyInjection" Version="2.4.0" />
+    <PackageReference Include="DotNetCore.Compile.Environment" Version="3.2.0" />
+    <PackageReference Include="DotNetCore.Natasha.CSharp" Version="5.2.2.1" />
+    <PackageReference Include="Mapster" Version="7.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+    <PackageReference Include="System.Text.Json" Version="7.0.3" />
+  </ItemGroup>
+
+</Project>

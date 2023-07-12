@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DEF4A0C4-A9A0-4B49-9FC4-A96E73B3D7F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{11AA1645-9940-4D73-B82F-880D0F8BEF96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{73E8550D-0E5D-4C08-A6A7-29CA498EFE86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caching", "Caching", "{558A20CF-3D77-4C5B-B37C-D0B246CE13EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auto", "Auto", "{F0194E78-B53F-4C82-868F-71559B0B2083}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auto.Caching.Redis", "src\Caching\Auto.Caching.Redis\Auto.Caching.Redis.csproj", "{9DDBE6B4-1541-43F5-A0E1-3C90F9784654}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auto.Core", "src\Auto\Auto.Core\Auto.Core.csproj", "{9607F1E2-8A73-4315-A6D3-E8399854E80F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auto", "samples\Auto\Auto.csproj", "{D10F8017-C213-4564-9636-0F4F15FB4F2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auto.Caching.Memcached", "src\Caching\Auto.Caching.Memcached\Auto.Caching.Memcached.csproj", "{29FD8DF4-D1BF-4510-8FEF-3AF7BA730C43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DDBE6B4-1541-43F5-A0E1-3C90F9784654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DDBE6B4-1541-43F5-A0E1-3C90F9784654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DDBE6B4-1541-43F5-A0E1-3C90F9784654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DDBE6B4-1541-43F5-A0E1-3C90F9784654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9607F1E2-8A73-4315-A6D3-E8399854E80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9607F1E2-8A73-4315-A6D3-E8399854E80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9607F1E2-8A73-4315-A6D3-E8399854E80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9607F1E2-8A73-4315-A6D3-E8399854E80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10F8017-C213-4564-9636-0F4F15FB4F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10F8017-C213-4564-9636-0F4F15FB4F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10F8017-C213-4564-9636-0F4F15FB4F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10F8017-C213-4564-9636-0F4F15FB4F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29FD8DF4-D1BF-4510-8FEF-3AF7BA730C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FD8DF4-D1BF-4510-8FEF-3AF7BA730C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FD8DF4-D1BF-4510-8FEF-3AF7BA730C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FD8DF4-D1BF-4510-8FEF-3AF7BA730C43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{558A20CF-3D77-4C5B-B37C-D0B246CE13EA} = {DEF4A0C4-A9A0-4B49-9FC4-A96E73B3D7F5}
+		{F0194E78-B53F-4C82-868F-71559B0B2083} = {DEF4A0C4-A9A0-4B49-9FC4-A96E73B3D7F5}
+		{9DDBE6B4-1541-43F5-A0E1-3C90F9784654} = {558A20CF-3D77-4C5B-B37C-D0B246CE13EA}
+		{9607F1E2-8A73-4315-A6D3-E8399854E80F} = {F0194E78-B53F-4C82-868F-71559B0B2083}
+		{D10F8017-C213-4564-9636-0F4F15FB4F2D} = {73E8550D-0E5D-4C08-A6A7-29CA498EFE86}
+		{29FD8DF4-D1BF-4510-8FEF-3AF7BA730C43} = {558A20CF-3D77-4C5B-B37C-D0B246CE13EA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {264CC55F-DE1F-4CCC-BA66-319AF2265F02}
+	EndGlobalSection
+EndGlobal
