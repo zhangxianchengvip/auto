@@ -17,9 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auto.Caching.Redis", "src\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auto.Core", "src\Auto\Auto.Core\Auto.Core.csproj", "{9607F1E2-8A73-4315-A6D3-E8399854E80F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auto", "samples\Auto\Auto.csproj", "{D10F8017-C213-4564-9636-0F4F15FB4F2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auto", "samples\Auto\Auto.csproj", "{D10F8017-C213-4564-9636-0F4F15FB4F2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auto.Caching.Memcached", "src\Caching\Auto.Caching.Memcached\Auto.Caching.Memcached.csproj", "{29FD8DF4-D1BF-4510-8FEF-3AF7BA730C43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auto.Caching.Memcached", "src\Caching\Auto.Caching.Memcached\Auto.Caching.Memcached.csproj", "{29FD8DF4-D1BF-4510-8FEF-3AF7BA730C43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

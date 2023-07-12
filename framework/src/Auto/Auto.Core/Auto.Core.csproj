@@ -3,7 +3,28 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <Title>Auto.Core</Title>
+    <Authors>zhangxiancheng</Authors>
+    <Description>auto 核心包</Description>
+    <Copyright>auto</Copyright>
+    <PackageProjectUrl>https://github.com/zhangxianchengvip/auto</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/zhangxianchengvip/auto</RepositoryUrl>
+    <PackageTags>cache;options;vallidation;asp.net core;auto;sign;sha;md5;dsa;rsa</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\logo\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AspectCore.Extensions.DependencyInjection" Version="2.4.0" />
