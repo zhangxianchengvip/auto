@@ -14,8 +14,8 @@
     <PackageTags>cache;options;vallidation;asp.net core;auto;sign;sha;md5;dsa;rsa</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReleaseNotes>缓存;选项;参数校验;</PackageReleaseNotes>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageLicenseExpression>MIT License</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,9 +31,6 @@
 
   <ItemGroup>
     <PackageReference Include="AspectCore.Extensions.DependencyInjection" Version="2.4.0" />
-    <PackageReference Include="DotNetCore.Compile.Environment" Version="3.2.0" />
-    <PackageReference Include="DotNetCore.Natasha.CSharp" Version="5.2.2.1" />
-    <PackageReference Include="Mapster" Version="7.3.0" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
     <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />

@@ -138,7 +138,13 @@ public WeatherForecast([NotNull] string userName)
 Install-Package Auto.Core.Redis
 ```
 
-2. [appsettings.json]()
+2. 注册
+
+```
+builder.Services.AddAutoRedis();
+```
+
+3. appsettings.json
 
 ```json
 {

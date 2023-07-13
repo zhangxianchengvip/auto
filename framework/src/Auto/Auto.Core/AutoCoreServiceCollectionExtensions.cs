@@ -1,14 +1,10 @@
-﻿using Auto.Core.Caching;
+﻿using Auto.Core.AutoDependencyInjection;
+using Auto.Core.Caching;
 using Auto.Core.Caching.Abstractions;
-using Auto.Core.AutoDependencyInjection;
 using Auto.Core.Options;
 using Auto.Core.Serialization;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Auto.Core
 {
