@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Auto.Caching.Redis
 {
-    [AutoOptions]
+    [AutoOptions(Node = "RedisOptions")]
     public class FreeRedisOptions
     {
         private const string DefaultHost = "localhost";

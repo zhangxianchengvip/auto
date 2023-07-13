@@ -130,17 +130,80 @@ public WeatherForecast([NotNull] string userName)
 }
 ```
 
-#### AutoOptions（选项）
-
-
-
 #### AutoCache（缓存）
 
+1. redis缓存提供
 
+```
+Install-Package Auto.Core.Redis
+```
 
-#### AutoService（注册）
+2. [appsettings.json]()
+
+```json
+{
+  "RedisOptions": {
+    "Host": "127.0.0.1",
+    "Port": 6379,
+    "Database": 0
+  }
+}
+```
 
 
 
 #### AutoValidation（参数校验）
+
+1. 字符串最大长度	[MaxLengthAttribute]
+
+2. 字符串最小长度    [MinLengthAttribute]
+3. 字符串不能为空或Null    [NotNullOrEmptyAttribute]
+
+4. 字符串不能为Null或空格    [NotNullOrWhiteSpaceAttribute]
+5. 对象不能为Null    [NotNullAttribute]
+
+6. 范围    [RangeAttribute]
+
+   
+
+#### 常见问题
+
+功能无法正常使用
+
+1. 检查方法设置为 virtual
+
+```C#
+[HttpPost(Name = "GetWeatherForecast")]
+[AutoCache]
+public virtual async Task<IEnumerable<WeatherForecast>> Get(User user)
+{
+    var ss = Enumerable.Range(1, 5).Select(index => new WeatherForecast
+    {
+                    Date = DateTime.Now.AddDays(index),
+                    TemperatureC = Random.Shared.Next(-20, 55),
+                    Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+        }).ToArray();
+
+       return ss;
+    }
+}
+```
+
+注意：控制器中的方法需要注册为服务后才可以使用
+
+```C#
+builder.Services.AddControllers().AddControllersAsServices();
+```
+
+2. 检查是否注册AutoCore
+
+```
+builder.Services.AddAutoCore(builder.Configuration);
+```
+
+3. 检查是否配置ServiceProviderFactory
+
+```
+builder.Host.UseServiceProviderFactory(new AutoServiceProviderFactory());
+```
 
