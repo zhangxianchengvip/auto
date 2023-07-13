@@ -14,6 +14,8 @@
     <PackageTags>cache;options;vallidation;asp.net core;auto;sign;sha;md5;dsa;rsa</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReleaseNotes>缓存;选项;参数校验;</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
