@@ -1,5 +1,6 @@
 using Auto.Core.Caching;
 using Auto.Core.Caching.Abstractions;
+using Auto.Core.Validation;
 using Auto.Options;
 using Auto.Users;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +21,7 @@ namespace Auto.Controllers
         private readonly Redis _redis;
         private readonly IUser _user;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IOptionsSnapshot<Redis> options, IUser user)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IOptionsSnapshot<Redis> options, [NotNull] IUser user)
         {
             _logger = logger;
             _redis = options.Value;

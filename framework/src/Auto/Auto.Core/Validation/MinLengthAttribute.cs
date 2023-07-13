@@ -9,9 +9,9 @@ namespace Auto.Core.Validation
     public class MinLengthAttribute : ParameterInterceptorAttribute
     {
         private readonly int _minLength;
-        private readonly string _message;
+        private readonly string? _message;
 
-        public MinLengthAttribute(int minLength = int.MinValue, string message = "")
+        public MinLengthAttribute(int minLength = int.MinValue, string? message =null)
         {
             _minLength = minLength;
             _message = message;

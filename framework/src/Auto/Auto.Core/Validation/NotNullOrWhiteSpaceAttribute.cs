@@ -8,9 +8,9 @@ namespace Auto.Core.Validation
 {
     public class NotNullOrWhiteSpaceAttribute : ParameterInterceptorAttribute
     {
-        private readonly string _message;
+        private readonly string? _message;
 
-        public NotNullOrWhiteSpaceAttribute(string message = "")
+        public NotNullOrWhiteSpaceAttribute(string? message = null)
         {
             _message = message;
         }

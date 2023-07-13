@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <Title>Auto.Core</Title>
     <Authors>zhangxiancheng</Authors>
-    <Description>auto 核心包</Description>
+    <Description>auto core</Description>
     <Copyright>auto</Copyright>
     <PackageProjectUrl>https://github.com/zhangxianchengvip/auto</PackageProjectUrl>
     <PackageIcon>logo.png</PackageIcon>
@@ -13,6 +13,7 @@
     <RepositoryUrl>https://github.com/zhangxianchengvip/auto</RepositoryUrl>
     <PackageTags>cache;options;vallidation;asp.net core;auto;sign;sha;md5;dsa;rsa</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReleaseNotes>缓存;选项;参数校验;</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

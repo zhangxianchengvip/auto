@@ -8,9 +8,9 @@ namespace Auto.Core.Validation
 {
     public class NotNullAttribute : ParameterInterceptorAttribute
     {
-        private readonly string _message;
+        private readonly string? _message;
 
-        public NotNullAttribute(string message = "")
+        public NotNullAttribute(string? message = null)
         {
             _message = message;
         }

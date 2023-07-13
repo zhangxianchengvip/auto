@@ -4,7 +4,7 @@ namespace Auto.Core.Validation
 {
     public static class AutoValidationExtension
     {
-        public static object CheckNotNull(this object obj, string param, string? message)
+        public static object CheckNotNull(this object obj, string param, string? message = null)
         {
             if (obj == null)
             {
@@ -71,7 +71,7 @@ namespace Auto.Core.Validation
                 throw new ArgumentException
                 (
                     paramName: param,
-                    message: $"{param} must is {typeof(T)}!"
+                    message: message ?? $"{param} must is {typeof(T)}!"
                 );
             }
 
@@ -87,7 +87,7 @@ namespace Auto.Core.Validation
                 throw new ArgumentException
                 (
                     paramName: param,
-                    message: $"{param} must is number!"
+                    message: message ?? $"{param} must is number!"
                 );
             }
 
@@ -98,7 +98,7 @@ namespace Auto.Core.Validation
                 throw new ArgumentOutOfRangeException
                 (
                     paramName: param,
-                    message: $"{param} out of  range!"
+                    message: message ?? $"{param} out of  range!"
                 );
             }
 
@@ -113,8 +113,8 @@ namespace Auto.Core.Validation
             {
                 throw new ArgumentOutOfRangeException
                 (
-                    message: message,
-                    paramName: $"{param} Length out of range!"
+                    paramName: param,
+                    message: message ?? $"{param} Length out of range!"
                 );
             }
 
@@ -128,8 +128,8 @@ namespace Auto.Core.Validation
             {
                 throw new ArgumentNullException
                 (
-                    paramName: param,
-                    message: message
+                   paramName: param,
+                   message: message ?? $"{param} is Empty!"
                 );
             }
 

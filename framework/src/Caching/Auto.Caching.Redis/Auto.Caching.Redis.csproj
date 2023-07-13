@@ -3,7 +3,29 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <Title>Auto.Caching.Redis</Title>
+    <Authors>zhangxiancheng</Authors>
+    <Description>基于FreeRedis实现的缓存</Description>
+    <Copyright>auto</Copyright>
+    <PackageProjectUrl>https://github.com/zhangxianchengvip/auto</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/zhangxianchengvip/auto</RepositoryUrl>
+    <PackageTags>cache;asp.net core;redis;</PackageTags>
+    <PackageReleaseNotes>支持redis缓存</PackageReleaseNotes>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\logo\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FreeRedis" Version="1.1.2" />
