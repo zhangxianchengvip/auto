@@ -1,5 +1,7 @@
 # Auto Core   (基于AspectCore)
 
+![logo](D:\Zhangxiancheng\NewGit\auto-github\auto\logo\logo.png)
+
 #### 介绍
 **[AutoCore](https://github.com/zhangxianchengvip/auto)**是基于 .Net Standard 2.1用于简化 [ASP.NET Core](https://learn.microsoft.com/zh-cn/aspnet/core/getting-started/?view=aspnetcore-6.0&tabs=windows)开发，**[AutoCore](https://github.com/zhangxianchengvip/auto)** 在 **[AspectCore](https://github.com/dotnetcore/AspectCore-Framework/blob/master/docs/reflection-extensions.md)** 的基础上进行功能开发，**[AspectCore](https://github.com/dotnetcore/AspectCore-Framework/blob/master/docs/reflection-extensions.md)** 在性能上都比反射有2个数量级的优化，达到了和硬编码调用相同的数量级。
 
@@ -141,3 +143,4 @@ public WeatherForecast([NotNull] string userName)
 
 
 #### AutoValidation（参数校验）
+
