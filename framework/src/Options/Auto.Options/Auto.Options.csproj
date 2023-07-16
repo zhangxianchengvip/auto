@@ -8,7 +8,7 @@
     <Authors>zhangxiancheng</Authors>
     <Description>AutoOptions Configuration</Description>
     <PackageIcon>logo.png</PackageIcon>
-    <RepositoryUrl>https://github.com/zhangxianchengvip/auto</RepositoryUrl>
+    <RepositoryUrl>https://github.com/zhangxianchengvip/auto/tree/main/framework/src/Options/Auto.Options</RepositoryUrl>
     <PackageTags>auto;options;config;Configuration</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>auto</Copyright>
