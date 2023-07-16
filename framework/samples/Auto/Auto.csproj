@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Caching\Auto.Caching.Redis\Auto.Caching.Redis.csproj" />
+    <ProjectReference Include="..\..\src\DistributedLocking\Auto\Auto.DistributedLock.Redis.csproj" />
   </ItemGroup>
 
 </Project>

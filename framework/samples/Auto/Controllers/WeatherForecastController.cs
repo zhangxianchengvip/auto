@@ -25,7 +25,7 @@ namespace Auto.Controllers
         {
             _logger = logger;
             _redis = options.Value;
-            _user = user;
+            _user = user; 
         }
 
         [HttpPost(Name = "GetWeatherForecast")]

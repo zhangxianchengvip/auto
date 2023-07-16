@@ -1,19 +1,19 @@
-﻿using Auto.Caching.Redis.Abstractions;
+﻿using Auto.Core.Caching.Abstractions;
 using Auto.Core.Serialization;
 using FreeRedis;
 using System;
 using System.Threading.Tasks;
 
-namespace Auto.Caching.Redis
+namespace Auto.Caching.Redis.Atuo.Caching.Redis
 {
-    public class FreeRedisClientProvider : IAutoRedisProvider
+    public class RedisCacheProvider : IAutoCacheProvider
     {
         private readonly IRedisClient _redisClient;
         private readonly IAutoSerializerProvider _serializer;
-        public FreeRedisClientProvider(IFreeRedisPersistentConnection connect, IAutoSerializerProvider serializer)
+        public RedisCacheProvider(IAutoSerializerProvider serializer, IRedisClient redisClient)
         {
-            _redisClient = connect.CreateRedisClient();
             _serializer = serializer;
+            _redisClient = redisClient;
         }
 
         public virtual async Task<object> GetAsync(string key, Type type)

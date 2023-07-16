@@ -1,11 +1,8 @@
 using Auto.Core;
 using Auto.Caching.Redis;
-using Auto.Core;
-using AspectCore.DependencyInjection;
 using Auto.Core.Options;
-using Auto.Options;
-using Microsoft.Extensions.Options;
-
+using Auto.DistributedLock.Redis;
+using Auto.Caching.Redis;
 namespace Auto
 {
     public class Program
@@ -18,7 +15,9 @@ namespace Auto
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddAutoCore(builder.Configuration);
-            builder.Services.AddAutoRedis();
+            builder.Services.AddAutoRedis(builder.Configuration);
+            builder.Services.AddAutoDisributedLockRedis(builder.Configuration);
+
             var app = builder.Build();
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -26,10 +25,6 @@ namespace Auto
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
-            var redis = app.Configuration.GetOptions<Redis>();
-
-            var rediss = app.Services.GetOptions<Redis>( );
 
             app.UseAuthorization();
             app.MapControllers();

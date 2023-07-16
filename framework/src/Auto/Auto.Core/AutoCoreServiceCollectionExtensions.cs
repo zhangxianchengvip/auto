@@ -1,6 +1,8 @@
 ﻿using Auto.Core.AutoDependencyInjection;
 using Auto.Core.Caching;
 using Auto.Core.Caching.Abstractions;
+using Auto.Core.Lock.Abstractions;
+using Auto.Core.Lock;
 using Auto.Core.Options;
 using Auto.Core.Serialization;
 using Microsoft.Extensions.Configuration;
@@ -15,6 +17,7 @@ namespace Auto.Core
             services.AddAutoCache();
             services.AddAutoOptions(configuration);
             services.AddAutoServiceRegister();
+            services.AddAutoLock();
             return services;
         }
 
@@ -25,7 +28,11 @@ namespace Auto.Core
             services.AddMemoryCache();
             return services;
         }
-
+        private static IServiceCollection AddAutoLock(this IServiceCollection services)
+        {
+            services.AddSingleton<IAutoLockProvider, ProcessLockProvider>();
+            return services;
+        }
         private static IServiceCollection AddAutoOptions(this IServiceCollection services, IConfiguration configuration)
         {
             return services.Configure(configuration);
